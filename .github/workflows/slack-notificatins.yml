@@ -14,4 +14,4 @@ jobs:
         SLACK_MESSAGE: 'Post Content :rocket:'
         SLACK_TITLE: Github-Action Check
         SLACK_USERNAME: sjnyos
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}   
