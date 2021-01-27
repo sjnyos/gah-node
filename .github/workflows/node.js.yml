@@ -44,5 +44,4 @@ jobs:
     - run: |
         npm i
         npm run build --if-present
-         env:
-        CI: true
+       
