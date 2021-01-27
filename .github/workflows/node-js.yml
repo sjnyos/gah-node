@@ -48,7 +48,9 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
+        passphrase: ${{secrets.SSH_PASSPHRASE}}
         script: |
+          sudo rm -r nodeapp
           mkdir nodeapp
           cd ~/nodeapp
           git pull origin worker1
