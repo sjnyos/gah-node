@@ -53,5 +53,3 @@ jobs:
           cd ~/nodeapp
           git pull origin worker1
           docker-compose up -d
-
-s
