@@ -18,7 +18,7 @@ jobs:
       run: |
         VERSION=$(date +%s)
         docker build . --file Dockerfile --tag docker.pkg.github.com/sjnyos/gah-node/app:${VERSION}
-        docker login docker.pkg.github.com --username sjnyos --password b46bd393d8b4f679d3f1b76343a52d3c510094aa
+        docker login docker.pkg.github.com --username sjnyos --password ${{secrets.GITHUB_TOKEN}}
         docker push docker.pkg.github.com/sjnyos/gah-node/app:${VERSION}
     
       
