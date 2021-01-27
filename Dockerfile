@@ -1,4 +1,4 @@
-FROM node:6.9
+FROM node:15.6.0-alpine3.10
 
 ENV APP=/opt/app NODE_ENV=production
 
