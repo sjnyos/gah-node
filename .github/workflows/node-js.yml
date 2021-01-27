@@ -53,5 +53,5 @@ jobs:
           sudo rm -r nodeapp
           mkdir nodeapp
           cd ~/nodeapp
-          git pull origin worker1
+          git pull origin master
           docker-compose up -d
