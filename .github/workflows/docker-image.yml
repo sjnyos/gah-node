@@ -19,5 +19,5 @@ jobs:
         VERSION=$(date +%s)
         docker build . --file Dockerfile --tag docker.pkg.github.com/sjnyos/gitact-nodejs-adv:${VERSION}
         docker login docker.pkg.github.com --username sjnyos --password Sur@j123456
-        docekr push docker.pkg.github.com/sjnyos/gitact-nodejs-adv:${VERSION}
+        docker push docker.pkg.github.com/sjnyos/gitact-nodejs-adv:${VERSION}
       
