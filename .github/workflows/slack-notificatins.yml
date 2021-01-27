@@ -1,5 +1,5 @@
 on: push
-name: Slack Notification 
+name: Workflow Status Check Link
 jobs:
   slackNotification:
     name: Slack Notification
@@ -9,9 +9,8 @@ jobs:
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@v2
       env:
-        SLACK_COLOR: '#3278BD'   
         SLACK_ICON: https://github.com/rtCamp.png?size=48
         SLACK_MESSAGE: 'Post Content :rocket:'
-        SLACK_TITLE: Github-Action Check
-        SLACK_USERNAME: sjnyos
+        SLACK_TITLE: Title
+        SLACK_USERNAME: Username
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}   
